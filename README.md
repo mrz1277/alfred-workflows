@@ -1,2 +1,2 @@
 # Alfred Workflows
-* [4shared](https://github.com/mrz1277/alfred-workflows/tree/master/net.yakiyama.alfred.4shared) : 4shared music search
+* [4shared](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/4shared.alfredworkflow) : 4shared music search
