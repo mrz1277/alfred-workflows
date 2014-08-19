@@ -1,15 +1,14 @@
-# 4shared
-A workflow for [Alfred](http://www.alfredapp.com/) to search music by 4shared
-![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/4shared.png)
+# 네이버 영화 검색
+네이버 영화에서 자동완성 검색을 지원하는 [알프레드](http://www.alfredapp.com/) 워크플로우
+![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/naver.movie.png)
 
-# TODO
-- [ ] download music
-- [ ] change keyword
+# 할 일
+- [ ] 캐시 이미지 삭제
 
-# Changelogs
-20/8/2014 - v1.0
+# 변경 이력
+2014.08.20 - v1.0
 
-# License
+# 라이센스
 
 The MIT License (MIT)
 

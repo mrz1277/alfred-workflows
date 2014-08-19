@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.yakiyama.alfred.naver.movie</string>
+	<key>connections</key>
+	<dict>
+		<key>222E5988-21EA-4292-9674-6FD40BB0C26A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2163FB77-C37F-48AD-854A-899C5C4CEE46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B5651511-D8C7-46F0-A2D3-F4C4DE559586</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2163FB77-C37F-48AD-854A-899C5C4CEE46</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>구재성</string>
+	<key>description</key>
+	<string>자동완성으로 영화 빠르게 검색하기</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>네이버 영화 검색</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>영화</string>
+				<key>runningsubtext</key>
+				<string>검색중...</string>
+				<key>script</key>
+				<string>python script.py "{query}"</string>
+				<key>subtext</key>
+				<string>키워드를 입력해 주세요.</string>
+				<key>title</key>
+				<string>네이버 영화 검색</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>222E5988-21EA-4292-9674-6FD40BB0C26A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2163FB77-C37F-48AD-854A-899C5C4CEE46</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>dudghk</string>
+				<key>runningsubtext</key>
+				<string>검색중...</string>
+				<key>script</key>
+				<string>python script.py "{query}"</string>
+				<key>subtext</key>
+				<string>키워드를 입력해 주세요.</string>
+				<key>title</key>
+				<string>네이버 영화 검색</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B5651511-D8C7-46F0-A2D3-F4C4DE559586</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2163FB77-C37F-48AD-854A-899C5C4CEE46</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>222E5988-21EA-4292-9674-6FD40BB0C26A</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>B5651511-D8C7-46F0-A2D3-F4C4DE559586</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/mrz1277/alfred-workflows</string>
+</dict>
+</plist>
