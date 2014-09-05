@@ -3,6 +3,7 @@
 
 ### uTorrent 설정
 ![준비](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/torrent-0.png)
+
 그림처럼 uTorrent 환경설정에서 Web-UI 활성화하고 비밀번호는 1234로 설정.
 포트와 계정을 변경하고 싶으면 워크플로우 패키지 안에 있는 config.cfg 파일 변경
 
@@ -12,6 +13,7 @@
 
 ### 카테고리
 ![카테고리](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/torrent-2.png)
+
 - 11 : 한국 음악
 - 12 : 한국 영화
 - 13 : 한국 예능
@@ -22,6 +24,7 @@
 - 23 : 외국 시사/다큐
 - 24 : 외국 시사/다큐
 - 25 : 외국 드라마
+
 카테고리까지 입력하면 지난 일주일간 인기있는 토렌트 표시
 
 ### 검색
