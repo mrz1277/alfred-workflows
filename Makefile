@@ -1,4 +1,4 @@
-all: clean 4shared naver.movie
+all: clean 4shared naver.movie torrent
 
 clean:
 	rm -f workflows/*.alfredworkflow
@@ -11,4 +11,9 @@ clean:
 naver.movie:
 	cd net.yakiyama.alfred.naver.movie ; \
 	zip ../workflows/naver.movie.alfredworkflow . -r --exclude=*.DS_Store* --exclude=*.pyc*
+	cd ../ ; \
+
+torrent:
+	cd net.yakiyama.alfred.torrent ; \
+	zip ../workflows/torrent.alfredworkflow . -r --exclude=*.DS_Store* --exclude=*.pyc*
 	cd ../ ; \
