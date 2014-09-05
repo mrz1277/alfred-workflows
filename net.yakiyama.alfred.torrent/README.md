@@ -1,4 +1,4 @@
-# 토렌트
+# [토렌트](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/torrent.alfredworkflow)
 토렌트 검색 및 다운로드
 
 ### uTorrent 설정

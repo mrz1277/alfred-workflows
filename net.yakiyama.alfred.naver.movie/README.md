@@ -1,4 +1,4 @@
-# 네이버 영화 검색
+# [네이버 영화 검색](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/naver.movie.alfredworkflow)
 네이버 영화에서 자동완성 검색을 지원하는 [알프레드](http://www.alfredapp.com/) 워크플로우
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/naver.movie.png)
 

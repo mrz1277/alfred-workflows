@@ -1,4 +1,4 @@
-# 4shared
+# [4shared](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/4shared.alfredworkflow)
 A workflow for [Alfred](http://www.alfredapp.com/) to search music by 4shared
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/4shared.png)
 
