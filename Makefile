@@ -1,4 +1,4 @@
-all: clean 4shared naver.movie torrent
+all: clean 4shared naver.movie torrent rotten
 
 clean:
 	rm -f workflows/*.alfredworkflow
@@ -16,4 +16,9 @@ naver.movie:
 torrent:
 	cd net.yakiyama.alfred.torrent ; \
 	zip ../workflows/torrent.alfredworkflow . -r --exclude=*.DS_Store* --exclude=*.pyc*
+	cd ../ ; \
+
+rotten:
+	cd net.yakiyama.alfred.rotten ; \
+	zip ../workflows/rotten.alfredworkflow . -r --exclude=*.DS_Store* --exclude=*.pyc*
 	cd ../ ; \
