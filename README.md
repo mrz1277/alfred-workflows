@@ -1,6 +1,6 @@
 # Alfred Workflows
 
-## [RottenTomatoes](https://github.com/mrz1277/alfred-workflows/tree/master/net.yakiyama.alfred.rotten) [(다운받기)](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/rotten.alfredworkflow)
+## [RottenTomatoes](https://github.com/mrz1277/alfred-workflows/tree/master/net.yakiyama.alfred.rotten) [(Download)](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/rotten.alfredworkflow)
 Search movie from rottentomatoes.com
 
 ![rotten](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/rotten.png)
