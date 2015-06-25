@@ -48,7 +48,7 @@ def main(wf):
     else:
         params = None
 
-    url = 'http://tosarang.net/bbs/board.php'
+    url = 'http://tosarangbest.net/bbs/board.php'
 
     if len(args) > 1:
         search(web.get(url, params).text)
