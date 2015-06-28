@@ -48,7 +48,7 @@ def main(wf):
     else:
         params = None
 
-    url = 'http://tosarangbest.net/bbs/board.php'
+    url = 'http://tosarang1.net/bbs/board.php'
 
     if len(args) > 1:
         search(web.get(url, params).text)
@@ -68,7 +68,7 @@ def top10(page):
     for row in rows:
         link = row.find("a")
         href = link["href"]
-        arg_link = ("http://tosarang.net/%s" % href).replace("../", "")
+        arg_link = ("http://tosarang1.net/%s" % href).replace("../", "")
         title = link.find("div").string
 
         wf.add_item(title = title,
@@ -87,7 +87,7 @@ def search(page):
         column = row.find("td", "subject")
         link = column.find("a")
         href = link["href"]
-        arg_link = ("http://tosarang.net/%s" % href).replace("../", "")
+        arg_link = ("http://tosarang1.net/%s" % href).replace("../", "")
         date = row.find("td", "datetime").string
         size = row.find("td", "hit").string
 
