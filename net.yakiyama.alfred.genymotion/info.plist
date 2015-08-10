@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>net.yakiyama.alfred.genymotion</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>11A01C67-1C78-49D5-A527-E0923D2DF836</key>
@@ -21,11 +23,11 @@
 	<key>createdby</key>
 	<string>Jaesung Koo</string>
 	<key>description</key>
-	<string>Start emulator headlessly</string>
+	<string>Start emulator instantly</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Genymotion</string>
+	<string>Genymotion v1.0</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -67,7 +69,7 @@
 				<key>script</key>
 				<string>python script.py "{query}"</string>
 				<key>title</key>
-				<string>geny</string>
+				<string>Loading Genymotion virtual devices...</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
