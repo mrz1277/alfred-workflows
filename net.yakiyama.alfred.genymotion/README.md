@@ -1,4 +1,4 @@
-# Genymotion
+# [Genymotion](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/genymotion.alfredworkflow)
 
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/geny.png)
 

@@ -1,4 +1,4 @@
-# RottenTomatoes
+# [RottenTomatoes](https://raw.github.com/mrz1277/alfred-workflows/master/workflows/rotten.alfredworkflow)
 
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/rotten.png)
 
