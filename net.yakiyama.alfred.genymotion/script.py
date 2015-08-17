@@ -4,6 +4,7 @@
 import sys
 import subprocess
 import re
+import os.path
 
 from workflow import Workflow, web
 
