@@ -9,11 +9,14 @@ from workflow import Workflow, web
 
 def main(wf):
 
-    output = subprocess.check_output(["VBoxManage", "list", "vms"])
+    vbox = "VBoxManage" if os.path.exists("VBoxManage") else "/usr/local/bin/VBoxManage"
+
+    output = subprocess.check_output([vbox, "list", "vms"])
+
     for line in output.splitlines():
         matches = re.match(r'\"(.*)\" \{(.*)\}', line, re.M)
 
-        vm_info = subprocess.check_output(["VBoxManage", "showvminfo", matches.group(2)])
+        vm_info = subprocess.check_output([vbox, "showvminfo", matches.group(2)])
         if "Genymotion" in vm_info:
             tokens = matches.group(1).split(' - ')
 
