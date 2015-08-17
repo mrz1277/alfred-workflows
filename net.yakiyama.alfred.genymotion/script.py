@@ -10,7 +10,7 @@ from workflow import Workflow, web
 
 def main(wf):
 
-    vbox = "VBoxManage" if os.path.exists("VBoxManage") else "/usr/local/bin/VBoxManage"
+    vbox = "/usr/bin/VBoxManage" if os.path.exists("/usr/bin/VBoxManage") else "/usr/local/bin/VBoxManage"
 
     output = subprocess.check_output([vbox, "list", "vms"])
 

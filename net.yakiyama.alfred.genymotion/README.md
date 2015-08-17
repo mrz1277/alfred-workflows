@@ -3,7 +3,7 @@
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/geny.png)
 
 # Changelogs
-2015.08.17 - v1.1 : check `VBoxManage` path
+2015.08.17 - v1.3 : check `VBoxManage` path
 2015.08.10 - v1.0
 
 # License
