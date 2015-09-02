@@ -4,9 +4,9 @@
 
 # Changelogs
 
-2015.09.02 - v1.4 : check `Genymotion.app` path
-2015.08.17 - v1.3 : check `VBoxManage` path
-2015.08.10 - v1.0
+* 2015.09.02 - v1.4 : check `Genymotion.app` path
+* 2015.08.17 - v1.3 : check `VBoxManage` path
+* 2015.08.10 - v1.0
 
 # License
 
