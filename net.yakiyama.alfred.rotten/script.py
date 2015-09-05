@@ -40,9 +40,18 @@ def main(wf):
         for item in json[key]:
             title = item['name']
             subtitle = ''
-            id = '%s' % item['vanity']
+            id = None
+            url = None
+
+            if 'vanity' in item:
+                id = '%s' % item['vanity']
+                url = 'http://www.rottentomatoes.com/%s/%s' % (items[key], id)
+
+            if 'url' in item:
+                id = '%s' % item['url']
+                url = 'http://www.rottentomatoes.com%s' % (id)
+
             # ico = getThumbnail(id, item['image'], key)
-            url = 'http://www.rottentomatoes.com/%s/%s' % (items[key], id)
 
             if 'subline' in item:
                 subtitle = item['subline']
@@ -53,15 +62,16 @@ def main(wf):
             if 'startYear' in item and 'endYear' in item:
                 title = u'%s (%s - %s)' % (title, item['startYear'], item['endYear'])
 
-            wf.add_item(
-                title=title,
-                subtitle=subtitle,
-                arg=url,
-                valid=True,
-                icon='images/%s.png' % key,
-                icontype=None,
-                uid=id
-            )
+            if id is not None:
+                wf.add_item(
+                    title=title,
+                    subtitle=subtitle,
+                    arg=url,
+                    valid=True,
+                    icon='images/%s.png' % key,
+                    icontype=None,
+                    uid=id
+                )
 
     wf.send_feedback()
 

@@ -3,7 +3,9 @@
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/rotten.png)
 
 # Changelogs
-2015.05.09 - v1.0
+
+* 2015.09.05 - v1.1 fix JSON response
+* 2015.05.09 - v1.0
 
 # License
 
