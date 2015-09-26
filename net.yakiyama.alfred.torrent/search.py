@@ -5,6 +5,8 @@ import re
 import sys
 from workflow import Workflow, web
 
+base_url = 'http://www.tosarang2.net'
+
 type = {
     11: 'torrent_music_kor',
     12: 'torrent_movie_kor',
@@ -35,9 +37,8 @@ def main(wf):
         params = dict(bo_table = table,
                       sfl = 'wr_subject',
                       sop = 'and',
-                      x = 0,
-                      y = 0,
                       stx = query)
+
     elif len(args) == 1 and len(args[0]) == 2:
         try:
             table = type[int(args[0])]
@@ -48,7 +49,7 @@ def main(wf):
     else:
         params = None
 
-    url = 'http://tosarang1.net/bbs/board.php'
+    url = base_url + '/bbs/board.php'
 
     if len(args) > 1:
         search(web.get(url, params).text)
@@ -68,11 +69,11 @@ def top10(page):
     for row in rows:
         link = row.find("a")
         href = link["href"]
-        arg_link = ("http://tosarang1.net/%s" % href).replace("../", "")
+        # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
         title = link.find("div").string
 
         wf.add_item(title = title,
-                    arg = arg_link,
+                    arg = href,
                     valid = True)
 
 
@@ -81,19 +82,21 @@ def search(page):
 
     soup = Soup(page)
 
-    rows = soup.find_all("tr", "list_row")
+    table = soup.find("table", "table")
+    tbody = table.find('tbody')
+    rows = tbody.find_all("tr")
 
     for row in rows:
-        column = row.find("td", "subject")
+        column = row.find("td", "td_subject")
         link = column.find("a")
         href = link["href"]
-        arg_link = ("http://tosarang1.net/%s" % href).replace("../", "")
-        date = row.find("td", "datetime").string
-        size = row.find("td", "hit").string
+        # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
+        date = row.find("td", "td_date").string
+        size = row.find_all("td", "td_num")[-1].string
 
         wf.add_item(title = ''.join(link.strings),
                     subtitle = ("%s / %s" % (date, size)),
-                    arg = arg_link,
+                    arg = href,
                     valid = True)
 
 

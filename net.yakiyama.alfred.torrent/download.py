@@ -14,7 +14,7 @@ def main(wf):
 
     r = web.get(query)
     soup = Soup(r.text)
-    donwload_links = soup.find_all("td", "view_file")
+    donwload_links = soup.find_all("div", "bo_v_file")
     magnet = donwload_links[-1]
     href = magnet.find('a')['href']
     simple_href = href.split('&')[0]
