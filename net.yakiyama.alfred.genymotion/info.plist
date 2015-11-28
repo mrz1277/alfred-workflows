@@ -36,24 +36,24 @@
 		<key>disabled</key>
 		<false/>
 		<key>name</key>
-		<string>Genymotion v1.4</string>
+		<string>Genymotion v1.5</string>
 		<key>objects</key>
 		<array>
 			<dict>
 				<key>config</key>
 				<dict>
 					<key>concurrently</key>
-					<false/>
+					<true/>
 					<key>escaping</key>
 					<integer>102</integer>
 					<key>script</key>
 					<string>if [ -d "/Applications/Genymotion.app" ]; then
-	/Applications/Genymotion.app/Contents/MacOS/player --vm-name {query}
-elif [ -d "$HOME/Applications/Genymotion.app" ]; then
-	$HOME/Applications/Genymotion.app/Contents/MacOS/player --vm-name {query}
-else
-	echo "Be sure if your Genymotion.app is under /Applications or ~/Applications directory"
-fi</string>
+						/Applications/Genymotion.app/Contents/MacOS/player --vm-name {query}
+						elif [ -d "$HOME/Applications/Genymotion.app" ]; then
+						$HOME/Applications/Genymotion.app/Contents/MacOS/player --vm-name {query}
+						else
+						echo "Be sure if your Genymotion.app is under /Applications or ~/Applications directory"
+						fi</string>
 					<key>type</key>
 					<integer>0</integer>
 				</dict>

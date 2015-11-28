@@ -4,6 +4,7 @@
 
 # Changelogs
 
+* 2015.11.28 - v1.5 : support multiple emulator run, use cache for list
 * 2015.09.02 - v1.4 : check `Genymotion.app` path
 * 2015.08.17 - v1.3 : check `VBoxManage` path
 * 2015.08.10 - v1.0
