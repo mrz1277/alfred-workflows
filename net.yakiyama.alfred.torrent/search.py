@@ -68,7 +68,7 @@ def top10(page):
 
     for row in rows:
         link = row.find("a")
-        href = link["href"]
+        href = base_url + link["href"]
         # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
         title = link.find("div").string
 
@@ -89,7 +89,7 @@ def search(page):
     for row in rows:
         column = row.find("td", "td_subject")
         link = column.find("a")
-        href = link["href"]
+        href = base_url + link["href"]
         # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
         date = row.find("td", "td_date").string
         size = row.find_all("td", "td_num")[-1].string
