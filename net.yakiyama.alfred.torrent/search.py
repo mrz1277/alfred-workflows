@@ -5,7 +5,7 @@ import re
 import sys
 from workflow import Workflow, web
 
-base_url = 'http://www.tosarang2.net'
+base_url = 'http://www.tobest2.net'
 
 type = {
     11: 'torrent_music_kor',
@@ -68,7 +68,7 @@ def top10(page):
 
     for row in rows:
         link = row.find("a")
-        href = base_url + link["href"]
+        href = link["href"]
         # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
         title = link.find("div").string
 
@@ -89,7 +89,7 @@ def search(page):
     for row in rows:
         column = row.find("td", "td_subject")
         link = column.find("a")
-        href = base_url + link["href"]
+        href = link["href"]
         # arg_link = ("%s/%s" % (base_url, href)).replace("../", "")
         date = row.find("td", "td_date").string
         size = row.find_all("td", "td_num")[-1].string
