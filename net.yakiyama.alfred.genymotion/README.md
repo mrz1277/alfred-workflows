@@ -2,9 +2,9 @@
 
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/geny.png)
 
-# Setup
+# Notice
 
-You need `genymotion.app` inside `~/Applications/` folder. (be careful of this if you use [brew cask](https://caskroom.github.io/))
+If you install `Genymotion` using [`brew cask`](https://caskroom.github.io/) then make sure the `Genymotion.app` must be inside `/Applications` or `~/Applications` folder.
 
 # Changelogs
 
