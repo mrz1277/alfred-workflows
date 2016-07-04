@@ -2,6 +2,10 @@
 
 ![example](https://raw.githubusercontent.com/mrz1277/alfred-workflows/master/screenshots/geny.png)
 
+# Setup
+
+You need `genymotion.app` inside `~/Applications/` folder. (be careful of this if you use [brew cask](https://caskroom.github.io/))
+
 # Changelogs
 
 * 2015.12.09 - v1.6 : support genymotion v2.6
